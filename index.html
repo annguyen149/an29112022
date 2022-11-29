@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th, td {
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(odd) {
+          background-color: #c6c8c8;
+        }
+        </style>
+</head>
+<body>
+    <h1> Market Research Survey </h1>
+    <p> Please take a few moments to complete this satisfaction survey </p>
+<h3> What is your age range? </h3>
+<form action="/action_page.php">
+    <label for="age"> </label>
+    <input type="number" id="age" name="age" min="18" max="24" >
+  </form>
+  <h3> What is your yearly income range? </h3>
+  <form action="/action_page.php">
+    <label for="income"> </label>
+    <input type="number" id="income" name="income" min="0" max="25000" >
+  </form>
+  <h3> Gender </h3>
+  <form action="/action_page.php">
+    <input type="radio" id="male" name="fav_language" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="fav_language" value="female">
+    <label for="female">Female</label><br>
+    </form> 
+    <h3> Which of the following products have your purchased in the last 2 month. Please check all that apply. </h3>
+    <form action="/action_page.php">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="products1">
+        <label for="vehicle1"> Product 1 </label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="products2">
+        <label for="vehicle2"> Product 2 </label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="products3">
+        <label for="vehicle3"> Product 3 </label><br><br>
+    </form> 
+    <h3> How often would you use our new product? </h3>
+    <form action="/action_page.php">
+        <input type="radio" id="daily" name="fav_language" value="daily">
+        <label for="daily">Daily</label><br>
+        <input type="radio" id="weekly" name="fav_language" value="weekly">
+        <label for="weekly">Weekly</label><br>
+        <input type="radio" id="monthly" name="fav_language" value="monthly">
+        <label for="monthly">Monthly</label><br>
+    </form> 
+    <h3> What would you pay for the new product? </h3>
+    <form action="/action_page.php">
+        <label for="fname">$</label>
+        <input type="text" id="fname" name="fname" size="8">
+        <label for="lname">.</label>
+        <input type="text" id="lname" name="lname" size="1" >
+    </form> 
+    <h3> What features would you like to see in the new product. </h3>
+    <form action="/action_page.php">
+        <textarea name="message" rows="10" cols="100"></textarea>
+    </form> 
+    <p> Plese rate your level of agreement with the following statements. </p>
+    <table>
+        <tr>
+        <th> </th>
+        <th> Strongly Disagree </th>
+        <th> Disagree </th>
+        <th> Agree </th>
+        <th> Strongly Agree </th>
+        </tr>
+        <tr>
+        <th>Our products are priced fairly.</th>
+        <td>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">1</label>
+        </td>
+        <td>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">2</label>
+        </td>
+        <td>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">3</label>
+        </td>
+        <td> 
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">4</label>
+        </td>
+        </tr>
+        <tr>
+        <th>Our products are high quality.</th>
+        <td> 
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">1</label>
+        </td>
+        <td>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">2</label>
+        </td>
+        <td>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">3</label>
+        </td>
+        <td> 
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">4</label>
+        </td>
+        </tr>
+        <tr>
+        <th>You would recommend our product to a friend or coworker.</th>
+        <td>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">1</label>
+        </td>
+        <td>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">2</label>
+        </td>
+        <td>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">3</label>
+        </td>
+        <td> 
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">4</label>
+        </td>
+        </tr>
+      </table>
+      <input type="submit" value="Submit">
+</body>
+</html>
